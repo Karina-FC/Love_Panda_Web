@@ -1,0 +1,208 @@
+/*
+Resetear el navegador
+*/
+
+* {
+	box-sizing: border-box;
+  font-family: 'Indie Flower', cursive;
+	margin: 0;
+	padding: 0;
+}
+
+.row:before, .row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+[class*="col-"] {
+	float: left;
+	min-height: 7px;
+	padding: 12px; /* gutters */
+}
+
+/*
+formula para el ancho de las columnas (numero columnas / 12) * 100
+*/
+
+.col-1 {
+	width: 8.333333%;
+}
+
+.col-2 {
+	width: 16.666667%;
+}
+
+.col-3 {
+	width: 25%;
+}
+
+.col-4 {
+	width: 33.333333%;
+}
+
+.col-5 {
+	width: 41.666667%;
+}
+
+.col-6 {
+	width: 60%;
+}
+
+.col-7 {
+	width: 58.333333%;
+}
+
+.col-8 {
+	width: 66.666667%;
+}
+
+.col-9 {
+	width: 75%;
+}
+
+.col-10 {
+  float: center;
+	width: 83.333333%;
+}
+
+.col-11 {
+	margin-left: 50px;
+	width: 91.666667%;
+	margin-top: 320px;
+	background-color: #32CD32;
+	height: 250px;
+}
+
+.col-12 {
+	width: 100%;
+	height: 150px;
+}
+
+/*
+Crear container
+*/
+
+.container {
+	width: 100%;
+	height: 1024px;
+	margin: 0 auto;
+	background-color: #008000;
+	color: #FF8C00;
+	line-height: 1.2;
+}
+
+.container h1 {
+	text-align: center;
+	font-size: 70px;
+	text-transform: uppercase;
+}
+
+.container h4 {
+	text-align: center;
+	font-size: 25px;
+	text-transform: capitalize;
+}
+
+.container #panda1 {
+	margin-top: 17px;
+	float: left;
+	width: 36%;
+}
+
+.container .col-12 #texto {
+	margin-top: 0px;
+	width: 64%;
+	height: 270px;
+	float: center;
+	background-color: #fff;
+	color: #000;
+}
+
+.container #panda2 {
+	margin-top: -271px;
+	float: right;
+	width: 35%;
+}
+
+h3 {
+	margin-top: 15px;
+	text-align: center;
+	font-size: 23px;
+	text-transform: capitalize;
+}
+
+#texto p {
+	margin-top: 30px;
+	text-align: center;
+	width: 100%;
+	font-size: 18px;
+	text-transform: capitalize;
+}
+
+.container .col-11 p {
+  margin-top: 80px;
+	float:left;
+	color: #000;
+	font-size: 30px;
+}
+
+.container .col-10 #panda3 {
+  margin-left: 350px;
+  width: 40%;
+}
+
+.pie-pagina {
+  width: 100%;
+  background-color: #FF8C00;
+  height: 50px;
+}
+
+.pie-pagina p {
+  margin-top: 10px;
+  color: #008000;
+  float: right;
+  text-transform: uppercase;
+}
+
+
+/*MIS ESTILOS*/
+
+img {
+	margin-top: 10px;
+	width: 18%;
+}
+
+@media (max-width: 450px) {
+	[class*="col-"] {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 780px) and (max-width: 1024px){
+
+  .container {
+    background-color: green;
+  }
+
+  .container .col-12 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 780px){
+  
+  .container {
+    background-color: green;
+  }
+
+  .container .col-12  .col-11 #panda1 #texto #panda2 .pandas {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+
+  .container {
+    background-color: green;
+  }
